@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SectionGauche() {
+function ActiviteFreelance() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function SectionGauche() {
     );
 }
 
-export default SectionGauche;
+export default ActiviteFreelance;

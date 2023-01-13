@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SectionDroite() {
+function GestionLocative() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function SectionDroite() {
     );
 }
 
-export default SectionDroite;
+export default GestionLocative;
