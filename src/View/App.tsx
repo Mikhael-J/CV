@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
+import Contente from "./Contente/Contente";
 
 export function run() {
   render();
@@ -8,7 +9,7 @@ export function run() {
 export default function App() {
   return (
     <React.Fragment>
-      <h1>test</h1>
+      <Contente />
     </React.Fragment>
   );
 }
