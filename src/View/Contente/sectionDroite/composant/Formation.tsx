@@ -11,7 +11,7 @@ const item: Array<string> = [
 
 function Formation() {
     return (
-        <div className="border">
+        <div className="">
             <ListePerso titre={titre} item={item} />
         </div>
     );

@@ -2,8 +2,8 @@ import React from 'react';
 
 function Title() {
     return (
-        <div className="border border-primary">
-            <p className="text-center">Développeur IT</p>
+        <div className="">
+            <p className="text-center fw-bolder fs-5">Développeur IT</p>
         </div>
     );
 }

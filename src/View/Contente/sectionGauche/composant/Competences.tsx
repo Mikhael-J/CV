@@ -13,12 +13,8 @@ const item: Array<string> = [
 
 function Competences() {
     return (
-        <div className="border border-primary">
-
+        <div className="">
             <ListePerso titre={titre} item={item} />
-
-
-
         </div>
     );
 }

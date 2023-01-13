@@ -11,7 +11,7 @@ const item: Array<string> = [
 
 function AMonPropos() {
     return (
-        <div className="border">
+        <div className="">
             <ListePerso titre={titre} item={item}  />
         </div>
     );

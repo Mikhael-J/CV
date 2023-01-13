@@ -8,13 +8,12 @@ interface IPropListPerso {
 function ListePerso({ titre, item }: IPropListPerso) {
 
     return (
-        <div className="border">
+        <div className="">
             <ul className="list-group">
                 <li className="list-group-item bg-secondary" aria-current="true">
                     <p className="text-center">
                         {titre}
                     </p>
-
                 </li>
                 {
                     item.map((item: string | JSX.Element) => (

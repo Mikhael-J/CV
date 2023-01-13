@@ -14,7 +14,7 @@ const item: Array<string> = [
 
 function SavoirEtre() {
     return (
-        <div className="border">
+        <div className="">
             <ListePerso titre={titre} item={item} />
         </div>
     );

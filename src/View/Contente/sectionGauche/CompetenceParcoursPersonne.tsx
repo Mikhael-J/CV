@@ -5,7 +5,7 @@ import Title from './composant/Title';
 
 function SectionGauche() {
     return (
-        <div className="col-md-8 border border-primary">
+        <div className="col-md-8 ">
             <Title />
             <Competences />
             <ExperiencesProfessionnelles />

@@ -13,7 +13,7 @@ const item: Array<string | JSX.Element> = [
 
 function Contact() {
     return (
-        <div className="border">
+        <div className="">
             <ListePerso titre={titre} item={item} />
         </div>
     );
