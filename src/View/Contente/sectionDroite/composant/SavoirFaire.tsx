@@ -14,7 +14,7 @@ const item: Array<string> = [
 function SavoirFaire() {
     return (
         <div className="">
-            <ListePerso titre={titre} item={item} />
+            <ListePerso titre={titre} items={item} />
         </div>
     );
 }

@@ -12,7 +12,7 @@ const item: Array<string> = [
 function AMonPropos() {
     return (
         <div className="">
-            <ListePerso titre={titre} item={item}  />
+            <ListePerso titre={titre} items={item}  />
         </div>
     );
 }

@@ -2,10 +2,16 @@ import React from 'react';
 
 interface IPropListPerso {
     titre: string;
-    item: Array<string | JSX.Element>
+    items: Array<string | JSX.Element>
 }
 
-function ListePerso({ titre, item }: IPropListPerso) {
+/**
+ * 
+ * @param titre titre de la liste
+ * @param items items de la liste
+ * @returns 
+ */
+function ListePerso({ titre, items }: IPropListPerso) {
     let cpt: number = 0;
     return (
         <div className="">
@@ -16,7 +22,7 @@ function ListePerso({ titre, item }: IPropListPerso) {
                     </p>
                 </li>
                 {
-                    item.map((item: string | JSX.Element) => (
+                    items.map((item: string | JSX.Element) => (
 
                         <li className="list-group-item" key={cpt++}>
                             {item}
