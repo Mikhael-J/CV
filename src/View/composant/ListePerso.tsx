@@ -6,7 +6,7 @@ interface IPropListPerso {
 }
 
 function ListePerso({ titre, item }: IPropListPerso) {
-
+    let cpt: number = 0;
     return (
         <div className="">
             <ul className="list-group">
@@ -17,7 +17,8 @@ function ListePerso({ titre, item }: IPropListPerso) {
                 </li>
                 {
                     item.map((item: string | JSX.Element) => (
-                        <li className="list-group-item">
+
+                        <li className="list-group-item" key={cpt++}>
                             {item}
                         </li>
                     ))

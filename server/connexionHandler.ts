@@ -1,6 +1,6 @@
 import express from 'express';
-import path from 'path';
-
+import { FileHandler } from './utility/fileHandler';
+import { Request, Response} from "express";
 
 interface Ressource {
     root: string;
@@ -25,26 +25,29 @@ export class ConnexionHandler {
 
     public run() {
         this.server.listen(this.port, () => {
-            console.log(`Listening on ${this.port}`)
+            console.log(`http://localhost:${this.port}/`)
         })
 
         this.dispatch();
     }
 
     private dispatch(): void {
-        let ressources: Array<Ressource> = [
-            { root: '/', path: '../dist', file: 'index.html' },
-            { root: '/main.js', path: '../dist', file: 'main.js' },
-            { root: '/roots.css', path: '../dist/static/style', file: 'roots.css' }]
+        const handler = new FileHandler("./dist", this.app)
+        handler.run()
 
-        for (const ressource of ressources) {
-            this.app.get(ressource.root, (req, res) => {
-                res.sendFile(path.join(__dirname, ressource.path, ressource.file));
+        for (let i = 0; i < handler.getRessources().length; i++) {
+            this.app.get('/' + handler.getNameFiles()[i], (req: Request, res: Response) => {
+                res.sendFile(handler.getRessources()[i]);
             })
         }
+
     }
 
     public getServer(): any {
         return this.server;
+    }
+
+    public getApp(): any {
+        return this.app;
     }
 }
