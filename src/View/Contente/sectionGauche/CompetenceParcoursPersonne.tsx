@@ -3,9 +3,9 @@ import Competences from './composant/Competences';
 import ExperiencesProfessionnelles from './composant/ExperiencesProfessionnelles';
 import Title from './composant/Title';
 
-function SectionGauche() {
+function CompetenceParcoursPersonne() {
     return (
-        <div className="col-md-8 ">
+        <div className="col-md-8 " id="competence-parcours-personne">
             <Title />
             <Competences />
             <ExperiencesProfessionnelles />
@@ -13,4 +13,4 @@ function SectionGauche() {
     );
 }
 
-export default SectionGauche;
+export default CompetenceParcoursPersonne;

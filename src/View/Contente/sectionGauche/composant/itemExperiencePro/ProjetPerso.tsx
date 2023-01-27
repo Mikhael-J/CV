@@ -21,7 +21,7 @@ const Projet4 = {
 }
 function ProjetPerso() {
     return (
-        <div className="list-group">
+        <div className="list-group" id="projet-perso">
             <div className="d-flex w-100 justify-content-between">
                 <h3 className="mb-1 text-decoration-underline">Projet Personnel</h3>
             </div>

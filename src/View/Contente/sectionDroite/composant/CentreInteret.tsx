@@ -10,7 +10,7 @@ const item: Array<string> = [
 
 function CentreInteret() {
     return (
-        <div className="">
+        <div className="" id="centre-interet">
             <ListePerso titre={titre} items={item} />
         </div>
     );

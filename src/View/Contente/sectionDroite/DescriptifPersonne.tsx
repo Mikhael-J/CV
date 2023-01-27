@@ -7,9 +7,9 @@ import Name from './composant/Name';
 import SavoirEtre from './composant/SavoirEtre';
 import SavoirFaire from './composant/SavoirFaire';
 
-function SectionDroite() {
+function DescriptifPersonne() {
     return (
-        <div className='col-md-4'>
+        <div className='col-md-4' id="descriptif-personne">
             <Name />
             <Contact />
             <AMonPropos />
@@ -21,4 +21,4 @@ function SectionDroite() {
     );
 }
 
-export default SectionDroite;
+export default DescriptifPersonne;

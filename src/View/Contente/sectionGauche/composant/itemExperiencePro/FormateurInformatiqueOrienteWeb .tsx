@@ -10,7 +10,7 @@ const Projet = {
 
 function FormateurInformatiqueOrienteWeb() {
     return (
-        <div className="list-group">
+        <div className="list-group" id="formateur-informatique-oriente-web">
             <div className="d-flex w-100 justify-content-between">
                 <h3 className="mb-1 text-decoration-underline">Formateur en informatique orienté web</h3>
                 <div className="badge text-wrap fs-6" style={{ color: "black" }}>2017/2021</div>

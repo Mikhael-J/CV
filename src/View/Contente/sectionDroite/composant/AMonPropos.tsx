@@ -11,7 +11,7 @@ const item: Array<string> = [
 
 function AMonPropos() {
     return (
-        <div className="">
+        <div className="" id="a-mon-propos">
             <ListePerso titre={titre} items={item}  />
         </div>
     );

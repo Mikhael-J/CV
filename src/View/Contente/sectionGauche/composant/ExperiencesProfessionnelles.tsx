@@ -23,7 +23,7 @@ const item: Array<string | JSX.Element> = [
 
 function ExperiencesProfessionnelles() {
     return (
-        <div className="">
+        <div className="" id="experiences-professionnelles">
             <ListePerso titre={titre} items={item} />
         </div>
     );

@@ -14,7 +14,7 @@ const item: Array<string> = [
 
 function SavoirEtre() {
     return (
-        <div className="">
+        <div className="" id="savoir-etre">
             <ListePerso titre={titre} items={item} />
         </div>
     );
