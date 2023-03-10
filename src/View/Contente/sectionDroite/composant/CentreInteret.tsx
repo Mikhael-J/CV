@@ -16,4 +16,5 @@ function CentreInteret() {
     );
 }
 
+
 export default CentreInteret;
